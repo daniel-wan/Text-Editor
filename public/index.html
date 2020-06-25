@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Text Editor</title>
+
+     <!-- CSS Links for Medium Editor -->
+     <link rel="stylesheet" href="dist/css/demo.css">
+     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css">
+     <link rel="stylesheet" href="dist/css/medium-editor.css">
+     <link rel="stylesheet" href="dist/css/themes/default.css" id="medium-editor-theme">
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.15.4/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.15.4/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.15.4/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.15.4/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.15.4/firebase-firestore.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+
+  </head>
+  <body onload = "test()">
+
+    
+  <textarea id = "input"  class="editable medium-editor-textarea"></textarea>
+
+  <script src="dist/js/medium-editor.js"></script>
+
+      
+  <script src = "app.js"></script>
+
+  <button class = "button" id = "loginButton" onclick = "googleLogin()">Login with Google</button>
+
+  <button class = "button" id = "logoutButton" onclick = "logout()">Logout</button>
+
+  <button class = "button" id = "loginWithDiffButton" onclick = "loginWithDiff()">Login with a Different Account</button>
+
+
+
+</body>
+</html>
