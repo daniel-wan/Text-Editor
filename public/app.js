@@ -3,11 +3,13 @@ var editor = new MediumEditor('.editable', {
 });
 
 //checks if user is logged in and loads their presaved text if true
-function test(){
+function loadText(){
+    
     firebase.auth().onAuthStateChanged(function(user){
         if(user){
             //updates the text to what is stored on database
             updateText();
+            
 
         } else {
             const loginWithDiffButton = document.getElementById("loginWithDiffButton");
